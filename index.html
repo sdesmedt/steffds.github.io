@@ -12,17 +12,20 @@
     <meta name="author" content="Stephanie De Smedt">
     <!--Links to CSS stylesheets, fonts, icons etc-->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <header>
     <figure id="aboutmenav">
-        <img class="navimg" src="resources/about-me-icon.png">
-        <figcaption>About Me</figcaption>
+        <a href="#about-me"><img class="navimg" src="resources/about-me-icon.png">
+        <figcaption>About Me</figcaption></a>
     </figure>
     <figure id="portfolionav">
-        <img class="navimg" src="resources/portfolio-icon.png">
-        <figcaption>Portfolio</figcaption>
+        <a href="#portfolio"><img class="navimg" src="resources/portfolio-icon.png">
+        <figcaption>Portfolio</figcaption></a>
     </figure>
     <h1>Stephanie De Smedt</h1>
     <figure id="blognav">
@@ -37,7 +40,9 @@
 
 <main>
     <section id="about-me">
-        <h2 id="am-title">About Me</h2>
+        <div class="subheading" id="am-title">
+        <h2>About Me</h2>
+        </div>
         <h3 id="am-quote">"Self-taught Web Developer with a passion for creating clean, elegant solutions that actually work for End Users"</h3>
         <img src="./resources/AboutMe.png" alt="Picture of me" id="StefAberdeen">
         <p id="am-desc">After a decade of working in the Oil and Gas sector - the majority of the time in Project Management - I grew frustrated 
@@ -50,6 +55,39 @@
             important start point for any web development challenge. 
             <br><br>
             Check out my projects below to see what I can do!</p>
+    </section>
+
+    <section id="portfolio">
+        <div class="subheading" id="p-title">
+        <h2>Portfolio</h2>
+        </div>
+        <p id="p-desc">A selection of my recent work:</p>
+        <div id="projects">
+            <figure>
+               <img src="./resources/project-placeholder.png">
+               <figcaption>Project 1</figcaption> 
+            </figure>
+            <figure>
+                <img src="./resources/project-placeholder.png">
+                <figcaption>Project 2</figcaption> 
+             </figure>
+             <figure>
+                <img src="./resources/project-placeholder.png">
+                <figcaption>Project 3</figcaption> 
+             </figure>
+             <figure>
+                <img src="./resources/project-placeholder.png">
+                <figcaption>Project 4</figcaption> 
+             </figure>
+             <figure>
+                <img src="./resources/project-placeholder.png">
+                <figcaption>Project 5</figcaption> 
+             </figure>
+             <figure>
+                <img src="./resources/project-placeholder.png">
+                <figcaption>Project 6</figcaption> 
+             </figure>
+        </div>
     </section>
 </main>
 

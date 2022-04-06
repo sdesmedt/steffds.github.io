@@ -1,29 +1,54 @@
+/*Overall Webpage CSS*/
 html{
     font-size: 16px;
+    margin: auto;
 }
-
 body{
     grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
+    background-color: #9DD9BC;
+    color: #0F0F0C;
 }
+.subheading{
+    width: 100%;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 1%;
+    background-color: #3d405b;
+    color: white;
+
+}
+/*Title Bar Styling*/
 header {
     grid-row: 1 / span 1;
-    background-color: beige;
+    background-color: #f4f1de;
+    color:black ;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
     place-items: center;
     width: 100%;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 header h1 {
-    color: black;
     font-size: 2rem;
     font-weight: bold;
     grid-column: 3 / span 1;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+header figure {
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+header a {
+    color: #0F0F0C;
+    text-decoration: none;
 }
 .navimg{
     width: 70%;
     max-width: 50px;
-}
 }
 #aboutmenav {
     grid-column: 1 / span 1;
@@ -37,17 +62,17 @@ header h1 {
 #contactnav{
     grid-column: 5 / span 1;
 }
-
+/*About Me Section Styling*/
 #about-me {
     grid-row: 2 / span 1;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: lightcyan;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 2fr 4fr 1fr;
     place-items: center;
-    column-gap: 2%;
+    column-gap: 1%;
 }
+
 #am-title {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
@@ -57,10 +82,13 @@ header h1 {
     grid-row: 2 / span 1;
     text-align: center;
     font-style: italic;
+    padding: 0 10%;
+    align-self: end;
+    font-size: 1.5rem;
 }
 #StefAberdeen {
     grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
+    grid-row: 2/ span 2;
     border-radius: 30%;
     width: 80%;
     max-width: 400px;
@@ -69,4 +97,40 @@ header h1 {
 #am-desc{
     grid-column: 2 / span 1;
     grid-row: 3 / span 2;
+    align-self: start;
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+/*Portfolio Styling*/
+#portfolio {
+    grid-row: 3 / span 1;
+    grid-template-rows: 1fr 2fr 10fr;
+}
+
+#p-desc {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.25rem;
+    margin: 5%
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+}
+#projects figcaption{
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2%;
+}
+#projects figure {
+    border: 1px solid gray;
+    background-color: #f4f1de;
+}
+#projects figure img {
+    width: 300px;
 }
