@@ -9,51 +9,62 @@ header {
     grid-row: 1 / span 1;
     background-color: beige;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    place-items: center;
     width: 100%;
-    position:sticky;
+    text-align: center;
 }
 header h1 {
     color: black;
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
-    grid-column: 2 / span 1;
-}
-.nav {
-    color:black;
-    display: inline;
-    margin: 1%;
-    place-self: center center;
-}
-#leftnav {
-    grid-column: 1 / span 1;
-}
-#rigthnav {
     grid-column: 3 / span 1;
 }
+.navimg{
+    width: 70%;
+    max-width: 50px;
+}
+}
+#aboutmenav {
+    grid-column: 1 / span 1;
+}
+#portfolionav{
+    grid-column: 2 / span 1;
+}
+#blognav{
+    grid-column: 4 / span 1;
+}
+#contactnav{
+    grid-column: 5 / span 1;
+}
 
-.about-me {
+#about-me {
     grid-row: 2 / span 1;
-    display: grid;
     width: 100%;
+    display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: lightcyan;
-    place-content: center center;
+    place-items: center;
+    column-gap: 2%;
 }
-#amtitle {
+#am-title {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
 }
-#amquote {
+#am-quote {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
+    text-align: center;
+    font-style: italic;
 }
 #StefAberdeen {
     grid-column: 1 / span 1;
     grid-row: 2 / span 2;
     border-radius: 30%;
+    width: 80%;
+    max-width: 400px;
+    align-self: center;
 }
 #am-desc{
     grid-column: 2 / span 1;
