@@ -1,3 +1,13 @@
-h1 {
-    color: blue;
+html{
+    font-size: 16px;
+}
+
+header {
+    background-color: beige;
+}
+header h1 {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
 }
