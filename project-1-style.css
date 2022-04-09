@@ -1,0 +1,218 @@
+html {
+    margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 16px;
+    background-color:lightgray
+
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100px 400px 80px 2fr 1fr 1fr 1fr 1fr;
+    max-width: 960px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    grid-row: 1 / span 1;
+    background-color: white;
+    height: 100px;
+    margin-bottom: 0;
+}
+header h3 {
+    font-family:  'Tenali Ramakrishna', sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.offer {
+    grid-row: 2 / span 1;
+    background-color: #f6f0ea;
+    color: #142328;
+    margin: 0;
+}
+#promocode {
+    background-color: #142328;
+    color: #f6f0ea;
+    display: inline-flex;
+    width: 340px;
+    border-radius: 0 100em 100em 0;
+    margin-top: 50px;
+}
+
+#promocode h4 {
+    font-size: 1rem;
+    padding: 0 10px;
+    margin: 0;
+    align-self: center;
+    font-weight: bold;
+}
+#sushi {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    align-self: center;
+    padding: 10px;
+    margin-right: 0;
+}
+.offer h1 {
+ font-size: 2rem;
+ margin-left: 10%;
+}
+.offer p {
+ margin-left: 10%;
+ line-height: 1.5;
+}
+.offer button {
+    background-color:#05c167;
+    color:#142328;
+    margin-left: 10%;
+    padding: 2%;
+    border: 1px solid #05c167;
+    margin-bottom: 10%;
+    font-size: 0.75rem;
+}
+button a {
+    text-decoration: none;
+    color: #142328;
+}
+#orderhead {
+    grid-row: 3 / span 1;
+    width: 100%;
+    background-color: #05c167;
+    display: grid;
+}
+#orderhead h2 {
+    color: #f6f0ea;
+    font-size: 1.5rem;
+    place-self: center;
+}
+#restaurants {
+    grid-row: 4 / span 1;
+    width: 100%;
+    background-color: #f6f0ea;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+
+.rest-data {
+    width: 40%;
+    background-color: #f6f6f6;
+    border: 2px solid #142328;
+    position: relative;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.rest-data img {
+    width: 100%;
+    margin: 0;
+}
+.rest-desc {
+    width: 100%;
+    background-color: #f6f6f6;
+    margin: 0;
+}
+.rest-desc h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0 10px 10%;
+}
+.rest-desc h5 {
+    color: gray;
+    font-size: 1.2rem;
+    margin: 0 0 0 11%;
+    font-weight: 200;
+}
+.order {
+    width: 100%;
+    height: auto;
+    background-color: #05c167;
+    margin: 0;
+}
+.order h4 {
+    padding: 10px 0 10px 20px;
+    color: #f6f6f6;
+}
+.rating {
+    border-radius: 100%;
+    background-color: #05c167;
+    height: 4ch;
+    width: 4ch;
+    display: flex;
+    justify-content: center;
+}
+.rating p {
+    align-self: center;
+}
+#UberImg{
+ grid-row: 5 / span 1;
+ width: 100%;
+}
+#ubershop {
+    grid-row: 6 / span 1;
+    background-color: #ffffff;
+}
+#ubershop h2 {
+    margin: 7.5% 10% 0 10%;
+    font-size: 1.75rem;
+}
+#ubershop p{
+    margin-left: 10%;
+}
+#ubershop button {
+    margin-left: 10%;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #f6f6f6;
+    font-weight: bold;
+}
+#terms {
+    grid-row: 7 / span 1;
+    background-color: #f6f6f6;
+    display: block;
+    
+}
+
+#terms p {
+    text-align: left;
+    margin: 10% 10% 0 10%;
+    font-size: 0.75rem; 
+}
+
+
+footer {
+    grid-row: 8 / span 1;
+    background-color: #000000;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+footer p {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1; 
+}
+#part1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+#part2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+#socials {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    margin-left: 5%;
+}
+footer img {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+}

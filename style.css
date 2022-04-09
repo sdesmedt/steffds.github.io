@@ -2,6 +2,7 @@
 html{
     font-size: 16px;
     margin: auto;
+    scroll-behavior: smooth;
 }
 body{
     grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
@@ -121,16 +122,30 @@ header a {
     align-items: stretch;
     gap: 10px;
 }
-#projects figcaption{
-    font-family: 'Grape Nuts', cursive;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 2%;
+#projects a {
+    text-decoration: none;
+    color: #0F0F0C
 }
+#projects figcaption{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    ;
+    
+}
+#projects figcaption h3 {
+    font-size: 1.25rem;
+    padding: 1%;
+}
+#projects figcaption p {
+    font-style: italic;
+}
+
 #projects figure {
-    border: 1px solid gray;
+    border: 1px solid black;
     background-color: #f4f1de;
+    width: 400px;
 }
 #projects figure img {
-    width: 300px;
+    width: 100%;
+    border: 1px solid black;
 }
