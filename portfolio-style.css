@@ -1,0 +1,247 @@
+/*Overall Styling*/
+html{
+    font-size: 16px;
+    margin: auto;
+}
+body{
+    background-color: #e1e4e3;
+    color: #0F0F0C;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+/*Title Bar Styling*/
+header {
+    background-color: #bfc0c0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    z-index: 1;
+}
+header a {
+    text-decoration: none;
+}
+header nav {
+    grid-column: 2 / span 1;
+    display: flex;
+}
+.navitem {
+    align-self: ;
+    justify-self:center;
+}
+header figcaption{
+    color: #0F0F0C;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+.navimg {
+    max-width: 30px;
+    max-height: 30px;
+}
+/*Footer Styling*/
+footer {
+    background-color: #bfc0c0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+footer ul {
+    grid-column: 2 / span 1;
+    display: flex;
+}
+footer li {
+    display: inline;
+    list-style: none;
+    justify-items: stretch;
+    align-items: center;
+    margin: 0 10px;
+}
+.footerimg {
+    width: 30px;
+}
+/*Page Specific Styling*/
+header h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2rem;
+    margin-left: 5%;
+}
+main {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px 50px 1fr 50px 1fr;
+}
+p {
+    grid-row: 1 / span 1;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1rem;
+    margin: 5% 5% 0 5%;
+}
+#projectheading {
+    grid-row: 2 / span 1;
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif; 
+}
+#skillheading {
+    grid-row: 4 / span 1;
+    margin-left: 5%;
+    font-family: 'Montserrat', sans-serif; 
+}
+#main-portfolio{
+    grid-row: 3 / span 1;
+    width: 100%;
+    display: flex;
+    row-gap: 30px;
+    column-gap: 10px;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#skills-portfolio{
+    grid-row: 5 / span 1;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-content: top;
+    flex-wrap: wrap;   
+}
+.project {
+    perspective: 1000px;
+}
+
+.card {
+    height:300px;
+    width: 300px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+.skillcard {
+    height:200px;
+    width: 200px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+.card:hover{
+    transform: rotateY(180deg)}
+
+.skillcard:hover{
+    transform: rotateY(180deg)}
+
+.frontofcard, .backofcard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    position: absolute;
+}
+.frontofcard {
+    background-color: #bfc0c0;
+    z-index: 3;
+    backface-visibility: hidden;
+}
+.backofcard {
+    background-color:#4f5d75;
+    z-index: 2;
+    transform: rotateY(180deg);
+} 
+.project-icon{
+    width: 80%;
+    border-radius: 16px;
+}
+.project-desc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+}
+.project-details{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+.project-lang{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.proj-button {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+}
+.proj-button:hover{
+    background-color: lightgoldenrodyellow;
+    margin-top: 2px;
+}
+
+
+
+
+
+
+
+/* Portfolio Styling
+#portfolio {
+    grid-row: 3 / span 1;
+    grid-template-rows: 1fr 2fr 10fr;
+}
+
+#p-desc {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.25rem;
+    margin: 5%
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+}
+#projects a {
+    text-decoration: none;
+    color: #0F0F0C
+}
+#projects figcaption{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    ;
+    
+}
+#projects figcaption h3 {
+    font-size: 1.25rem;
+    padding: 1%;
+}
+#projects figcaption p {
+    font-style: italic;
+}
+
+#projects figure {
+    border: 1px solid black;
+    background-color: #f4f1de;
+    width: 400px;
+}
+#projects figure img {
+    width: 100%;
+    border: 1px solid black;
+} */

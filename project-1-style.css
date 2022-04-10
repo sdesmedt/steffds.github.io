@@ -216,3 +216,19 @@ footer img {
     height: 50px;
     background-color: #ffffff;
 }
+
+.return-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+.return-button:hover{
+    background-color: lightgoldenrodyellow;
+    margin-top: 2px;
+}

@@ -1,151 +1,117 @@
-/*Overall Webpage CSS*/
 html{
     font-size: 16px;
     margin: auto;
-    scroll-behavior: smooth;
 }
 body{
-    grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
-    background-color: #9DD9BC;
+    background-image: url("./resources/homepage.jpg");
+    background-color: #e1e4e3;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #0F0F0C;
+    margin: 0;
+    height: 100vh;
 }
-.subheading{
-    width: 100%;
-    text-align: center;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.5rem;
-    padding: 1%;
-    background-color: #3d405b;
-    color: white;
-
+a {
+    text-decoration: none;
 }
 /*Title Bar Styling*/
 header {
-    grid-row: 1 / span 1;
-    background-color: #f4f1de;
-    color:black ;
-    display: grid;
-    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-    place-items: center;
+    background-color: #bfc0c0;
     width: 100%;
-    text-align: center;
     position: sticky;
     top: 0;
-}
-header h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    grid-column: 3 / span 1;
-    font-family: 'Merriweather Sans', sans-serif;
-}
-header figure {
-    font-family: 'Grape Nuts', cursive;
-    font-size: 1.25rem;
-    font-weight: 700;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 header a {
-    color: #0F0F0C;
     text-decoration: none;
 }
-.navimg{
-    width: 70%;
-    max-width: 50px;
-}
-#aboutmenav {
-    grid-column: 1 / span 1;
-}
-#portfolionav{
+header nav {
     grid-column: 2 / span 1;
-}
-#blognav{
-    grid-column: 4 / span 1;
-}
-#contactnav{
-    grid-column: 5 / span 1;
-}
-/*About Me Section Styling*/
-#about-me {
-    grid-row: 2 / span 1;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 2fr 2fr 4fr 1fr;
-    place-items: center;
-    column-gap: 1%;
-}
-
-#am-title {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
-}
-#am-quote {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-    text-align: center;
-    font-style: italic;
-    padding: 0 10%;
-    align-self: end;
-    font-size: 1.5rem;
-}
-#StefAberdeen {
-    grid-column: 1 / span 1;
-    grid-row: 2/ span 2;
-    border-radius: 30%;
-    width: 80%;
-    max-width: 400px;
-    align-self: center;
-}
-#am-desc{
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 2;
-    align-self: start;
-    font-size: 1rem;
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-}
-/*Portfolio Styling*/
-#portfolio {
-    grid-row: 3 / span 1;
-    grid-template-rows: 1fr 2fr 10fr;
-}
-
-#p-desc {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.25rem;
-    margin: 5%
-}
-
-#projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 10px;
 }
-#projects a {
-    text-decoration: none;
-    color: #0F0F0C
+.navitem {
+    align-self: ;
+    justify-self:center;
 }
-#projects figcaption{
-    font-family: 'Merriweather Sans', sans-serif;
+header figcaption{
+    color: #0F0F0C;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+.navimg {
+    max-width: 30px;
+    max-height: 30px;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
     text-align: center;
-    ;
-    
-}
-#projects figcaption h3 {
-    font-size: 1.25rem;
-    padding: 1%;
-}
-#projects figcaption p {
-    font-style: italic;
+    height: 100vh;
 }
 
-#projects figure {
-    border: 1px solid black;
-    background-color: #f4f1de;
-    width: 400px;
+main h1 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 2;
+    text-align: left;
+    align-self: end;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
 }
-#projects figure img {
+main h2 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 2;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+main button {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 2;
+    height: fit-content;
+    width: fit-content;
+    padding: 16px;
+    border-radius: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+main button:hover{
+    background-color: #e1e4e3;
+    margin-top: 2px;
+}
+
+footer {
+    background-color: #bfc0c0;
     width: 100%;
-    border: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+footer p {
+    grid-column: 1 / span 1;
+    margin-left: 10%;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+}
+
+footer ul {
+    grid-column: 3 / span 1;
+    display: flex;
+   
+}
+
+footer li {
+    display: inline;
+    list-style: none;
+    align-items: center;
+    margin: 0 10px;
+}
+.footerimg {
+    width: 30px;
 }
