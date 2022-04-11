@@ -72,3 +72,51 @@ header h1 {
     font-size: 2rem;
     margin-left: 5%;
 }
+main {
+    display: grid;
+    grid-template-rows: 150px 50px 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#photogallery {
+    grid-row: 1 / span 1;
+    grid-column: 1/ span 2;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-items: center;
+}
+.imageofme {
+   width:10%;
+   height: 80%;
+}
+
+main p {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 10% 0 10%;
+
+}
+
+#myskills {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1rem;
+    text-align: center;
+}
