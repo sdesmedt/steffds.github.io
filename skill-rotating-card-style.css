@@ -1,0 +1,195 @@
+html{
+    font-size: 16px;
+    margin: auto;
+}
+body{
+    background-color: #e1e4e3;
+    color: #0F0F0C;
+    margin: 0;
+    height: 100vh;
+}
+
+/*Title Bar Styling*/
+header {
+    background-color: #bfc0c0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    grid-column: 1 / span 1;
+    margin-left: 5%;
+
+}
+header a {
+    text-decoration: none;
+}
+header nav {
+    grid-column: 3 / span 1;
+    display: flex;
+}
+.navitem {
+    align-self: ;
+    justify-self:center;
+}
+header figcaption{
+    color: #0F0F0C;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+.navimg {
+    max-width: 30px;
+    max-height: 30px;
+}
+footer {
+    background-color: #bfc0c0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+footer p {
+    grid-column: 1 / span 1;
+    margin-left: 10%;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+}
+
+footer ul {
+    grid-column: 3 / span 1;
+    display: flex;
+   
+}
+
+footer li {
+    display: inline;
+    list-style: none;
+    align-items: center;
+    margin: 0 10px;
+}
+.footerimg {
+    width: 30px;
+}
+
+
+/*Page Specific Styling Begins*/
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 150px 1fr 150px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.card-container {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    margin-left: 5%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    background-color: white;
+}
+
+.card {
+    height:60%;
+    width: 80%;
+    position: relative;
+    transition: all 0.8s ease-in;
+    transform-style: preserve-3d;
+}
+
+.frontofcard, .backofcard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.frontofcard {
+    background-image: url("./resources/Portfolio/Skills/Image-1.png");
+    background-color: #a5a58d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    z-index: 3;
+    backface-visibility: hidden;
+}
+.frontofcard h3, .backofcard h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    backface-visibility: hidden;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.frontofcard h3 {
+    margin-top: 12%;
+    align-self: start;
+}
+.backofcard h4 {
+    align-self: center;
+}
+.backofcard {
+    background-color:  #a5a58d;
+    z-index: 2;
+    transform: rotateY(180deg);
+    
+} 
+.card:hover{
+    transform: rotateY(180deg)
+}
+#details {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    background-color: #c8d5b9;
+    border: 1px solid black;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#text-container {
+    margin: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+#text-container h2 {
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+#text-container p {
+    font-size:0.9rem;
+}
+#text-container h1 {
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+.button {
+    margin-bottom: 5%;
+    align-self: center;
+}
+#details button {
+    background-color: #e1e4e3;
+    border-radius: 5px;
+    padding: 10px;
+}
+#details button:hover{
+    background-color: lightgoldenrodyellow;
+}

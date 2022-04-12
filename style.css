@@ -3,10 +3,10 @@ html{
     margin: auto;
 }
 body{
-    background-image: url("./resources/homepage.jpg");
-    background-color: #e1e4e3;
+    background-image: url(./resources/homepage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #e1e4e3;
     color: #0F0F0C;
     margin: 0;
     height: 100vh;
