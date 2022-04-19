@@ -165,6 +165,13 @@ h2 {
     border-radius: 10px 0 0 10px;
     height: 20px;
 }
+.php{
+    width: 20%;
+    background-color: green;
+    color: green;
+    border-radius: 10px 0 0 10px;
+    height: 20px;
+}
 .skill{
     width: 10%;
     background-color: green;
