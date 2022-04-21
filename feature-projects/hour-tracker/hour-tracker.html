@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--Tab Title Info-->
+<title>Personal Time Tracker</title>
+<!--Meta Data-->
+<meta charset="utf-8">
+<meta name="description" content="Time Tracker: Logging Hours Worked on Certain Skills">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="HTML, CSS, Javascript, Time, Tracker, Productivity">
+<meta name="author" content="Stephanie De Smedt">
+<!--Links to CSS stylesheets, fonts, icons etc-->
+<link rel="stylesheet" href="./hour-tracker.css">
+</head>
+
+<body>
+    <section class="time-tracker">
+<!--Section to add new time categories-->   
+    <div class="setup-bar">
+        <form>
+            <label for="categories">Add a new area:</label>
+            <select id="categories" name="categories">
+                <option value="Codecademy">Codecademy</option>
+                <option value="Codecademy">Medium</option>
+                <option value="Codecademy">Other Tutorial Courses</option>
+                <option value="Codecademy">Personal Project Work</option>
+                <option value="Codecademy">Freelance Applications</option>
+                <option value="Codecademy">Freelance Work</option>
+            </select>
+            <button type="submit" onclick="">Add</button>
+        </form>
+    </div>
+<!--Summary of total time for a person-->
+    <div class="personal-summary">
+        <div class="personal">
+            <img id="personal-id" src="../../resources/AboutMe/Image-4.png">
+            <h5>Report for</h5>
+            <h2>Simply Stef</h2>
+            <h3><span>X</span> hrs</h3>
+        </div>
+        <div class="hour-summary">
+            <h5>Daily</h5>
+            <h5>Weekly</h5>
+            <h5>Monthly</h5>
+        </div>
+    </div>
+<!--Individual Category Time-->
+    <div class="overview-section">
+        <div class="time-categories codecademy"> 
+            <div class="category-summary">
+                <div class="cat-header">
+                    <h4>Codecademy</h4>
+                    <button class="dropdown-button" type="button">&#8230;</button>
+                    <div class="dropdown" id="dropdown">
+                        <ul>
+                            <li>Add Hours</li>
+                            <li>Reset Tracking</li>
+                            <li>Remove from Dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cat-body">
+                    <h2><span>20</span> hrs</h2>
+                    <h5>Previous: <span>10</span> hrs</h5>
+                </div>
+            </div>
+        </div>
+        <div class="time-categories medium"> 
+            <div class="category-summary">
+                <div class="cat-header">
+                    <h4>Medium</h4>
+                    <button type="button">&#8230;</button>
+                </div>
+                <div class="cat-body">
+                    <h2><span>12</span> hrs</h2>
+                    <h5>Previous: <span>30</span> hrs</h5>
+                </div>
+            </div>
+        </div>
+        <div class="time-categories tutorials"> 
+            <div class="category-summary">
+                <div class="cat-header">
+                    <h4>Other Tutorials</h4>
+                    <button type="button">&#8230;</button>
+                </div>
+                <div class="cat-body">
+                    <h2><span>5</span> hrs</h2>
+                    <h5>Previous: <span>1</span> hrs</h5>
+                </div>
+            </div>
+        </div>
+        <div class="time-categories personal-project"> 
+            <div class="category-summary">
+                <div class="cat-header">
+                    <h4>Personal Projects</h4>
+                    <button type="button">&#8230;</button>
+                </div>
+                <div class="cat-body">
+                    <h2><span>25</span> hrs</h2>
+                    <h5>Previous: <span>40</span> hrs</h5>
+                </div>
+            </div>
+        </div>
+        <div class="time-categories free-apps"> 
+            <div class="category-summary">
+                <div class="cat-header">
+                    <h4>Freelance Applications</h4>
+                    <button type="button">&#8230;</button>
+                </div>
+                <div class="cat-body">
+                    <h2><span>1</span> hrs</h2>
+                    <h5>Previous: <span>0</span> hrs</h5>
+                </div>
+            </div>
+        </div>
+        <div class="time-categories free-work"> 
+            <div class="category-summary">
+                <div class="cat-header">
+                    <h4>Freelance Work</h4>
+                    <button type="button">&#8230;</button>
+                </div>
+                <div class="cat-body">
+                    <h2><span>0</span> hrs</h2>
+                    <h5>Previous: <span>0</span> hrs</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>

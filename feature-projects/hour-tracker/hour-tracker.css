@@ -1,0 +1,198 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    display: grid;
+    align-content: center;
+    justify-items:center;
+    height: 100vh;
+    background-color: darkblue ;
+}
+
+.time-tracker{
+display: grid;
+column-gap: 5%;
+grid-template-rows: 100px 1fr;
+grid-template-columns: 1fr 3fr;
+height: 80vh;
+}
+/*Section for adding new categories*/
+.setup-bar{
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white; 
+    margin-bottom: 5%; 
+    min-height: 60px;
+}
+.setup-bar label {
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+}
+.setup-bar select {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+}
+.setup-bar button{
+    font-size: 0.9rem;
+    font-family: Helvetica, sans-serif;
+    margin: 0 10px;   
+}
+
+
+/*Total Time for a person*/
+.personal-summary{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 80%;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    margin-left: 5%;
+    background-color: white;
+}
+.personal{
+    grid-row: 1 / span 1;
+    text-align: center;
+}
+#personal-id{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+.personal h2 {
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+}
+.personal h5{
+    font-size: 0.8rem;
+    font-family: Helvetica, sans-serif;
+}
+.personal h3{
+    font-size: 1.8rem;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 5%;
+}
+.hour-summary{
+    grid-row: 2 / span 1;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    justify-content: space-around;
+}
+.hour-summary h5 {
+    font-size: 0.8rem;
+    font-family: Helvetica, sans-serif;
+    padding: 5px;
+    border: 1px solid gray;
+    width: 10ch;
+    text-align: center;
+
+}
+.overview-section{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/*Individual Time Categories*/
+.time-categories{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    border-radius: 20px;
+    height: 300px;
+    width: 200px;
+}
+.category-summary{
+   grid-row: 2 / span 2; 
+   border-radius: 20px;
+   border: 1px black solid;
+   background-color: white;
+   display: grid;
+   grid-template-rows: 1fr 2fr;
+}
+.cat-header{
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+}
+.cat-header button{
+    width: 20px;
+    height: 20px;
+    align-self:center;
+    padding: 3px;
+    z-index: 2;
+}
+.cat-header h4{
+    align-self: center;
+    padding: 0 10px 0 5px;
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+}
+.cat-body{
+    grid-row: 2 / span 1;
+    text-align: center
+}
+/*Setup color for each category*/
+.time-categories.codecademy{
+    background-color: aqua;
+}
+.time-categories.medium{
+    background-color: greenyellow;
+}
+.time-categories.tutorials{
+    background-color: yellow;
+}
+.time-categories.personal-project{
+    background-color: red;
+}
+.time-categories.free-apps{
+    background-color: pink;
+}
+.time-categories.free-work{
+    background-color: plum;
+}
+/*Hidden Menu*/
+.dropdown{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.8rem ;
+    text-align: right;
+    margin-right: 2%;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    opacity: 0;
+    z-index: 1;
+    transform: translateY(93px);
+}
+.dropdown ul {
+    list-style: none;
+}
+.dropdown li {
+    padding: 10px 0;
+    margin-right: 2%;
+}
+.dropdown-button:active + .dropdown {
+    opacity: 1;
+}
