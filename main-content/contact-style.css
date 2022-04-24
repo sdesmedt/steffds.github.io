@@ -77,128 +77,121 @@ main {
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 100px 1fr 200px;
-    
+    grid-template-rows: repeat(5, 1fr) 200px;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.heading-details{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    width: 100%;
+}
+.contact-title {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+.contact-subtitle{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.9rem;
+    width: 75%;
+    text-align: center;
+}
+
+.country {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.75rem;
+    justify-content: center;
+    margin-left: 40%;
+}
+.country img{
+    height: 30px;
+    width: 30px;
+}
+.country p {
+    margin-left: 5%;
+}
+.skills {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.75rem;
+    align-self: start;
+    margin-right: 50%;
+}
+
+.maillogo {
+    grid-row:3 / span 1;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    align-self: center;
 }
 .contact-form {
-    border: 1px solid black;
-    background-color: white;
-    font-size: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-    max-width: 1000px;
-    width: 100%;
+    grid-row:3 / span 1;
+    grid-column: 3 / span 2;
     justify-self: center;
-}
-#contactme{
-    margin: 5%;
+    align-self: center;
     width: 100%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr) 2fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
-#name-group{
-    grid-row: 1 / span 1;
-    width: 100%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-#name-group label {
-    grid-column: 1 / span 1;
-    margin-right: 5%;
-}
-#name {
-    grid-column: 2 / span 1;
+.contact-form input {
     width: 80%;
-}
-#email-group{
-    grid-row: 2 / span 1;
-    width: 100%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-#email-group label {
-    grid-column: 1 / span 1;
-    margin-right: 5%;
-}
-#email {
-    grid-column: 2 / span 1;
-    width: 80%;
-}
-#subject-group{
-    grid-row: 3 / span 1;
-    width: 100%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-#subject-group label {
-    grid-column: 1 / span 1;
-    margin-right: 5%;
-}
-#subject {
-    grid-column: 2 / span 1;
-    width: 80%;
-}
-#message-group{
-    grid-row: 4 / span 1;
-    width: 100%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-#message-group label {
-    grid-column: 1 / span 1;
-    margin-right: 5%;
-}
-#message {
-    grid-column: 2 / span 1;
-    width: 80%;
-}
-#form-button{
-    grid-row: 5 / span 1;
-    width: 50%;
-    height: 50%;
-    justify-self: center;
+    height: 40px;
     margin-bottom: 5%;
-    cursor: pointer;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.75rem;
+    color: #bfc0c0;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #4a4e69
+
 }
-#form-button:hover{
-    background-color: antiquewhite;
+.contact-form textarea {
+    width: 80%;
+    margin-bottom: 5%; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.75rem;
+    color: #bfc0c0; 
+    padding-top: 10px;
+    padding-left: 10px; 
+    border-radius: 10px;
+    border: 2px solid #4a4e69
 }
-#status {
-    border-radius: 25px;
-    width: fit-content;
-    font-size: 1.2rem;
-    font-family:  'Montserrat', sans-serif;;
+.contact-form button {
+    width: 50%;
+    margin-left: 15%;
+    border-radius: 10px;
+    border: 2px solid #4a4e69;
+    background-color:#4a4e69;
+    color: white;
+    padding: 10px;
+}
+.maillogo img {
+    height: 60%;
+    width: 60%;
     justify-self: center;
-
-}
-#status.success {
-    background: linear-gradient(lightgreen, lightblue);
-    animation: status 3s ease forwards;
-    padding: 10px 40px;
-}
-#status.error {
-    background: linear-gradient(lightcoral, lightyellow);
-    animation: status 3s ease forwards;
-    padding: 10px 40px;
+    align-self: center;
+    margin-left: 10%;
 }
 
-@keyframes status {
-    0% {
-        opacity: 1;
-        pointer-events: all;
-    }
-    50% {
-        opacity: 1;
-        pointer-events: all;
-    }
-    100% {
-        opacity: 0;
-        pointer-events: none;
-    }
-}
