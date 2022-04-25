@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <!--Tab Title Info-->
+        <title> Skills: Basic Javascript Stopwatch</title>
+        <!--Meta Data-->
+        <meta charset="utf-8">
+        <meta name="description" content="Demonstration of a rotating card styled with CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Portfolio, Coding, Web Design, HTML, CSS">
+        <meta name="author" content="Stephanie De Smedt">
+        <!--Links to CSS stylesheets, fonts, icons etc-->
+        <link rel="stylesheet" href="./watch-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio Skills</h1>
+            <nav>
+             <figure class="navitem">
+                 <a href="../../main-content/aboutme.html"><img class="navimg" src="../../resources/Icons/about-me-icon.png">
+                 <figcaption>About Me</figcaption></a>
+             </figure>
+             <figure class="navitem">
+                 <a href="../../main-content/portfolio.html"><img class="navimg" src="../../resources/Icons/portfolio-icon.png">
+                 <figcaption>Portfolio</figcaption></a>
+             </figure>
+             <figure class="navitem">
+                 <a href="../../main-content/blog.html"><img class="navimg" src="../../resources/Icons/blog-icon.png">
+                 <figcaption>Blog</figcaption></a>
+             </figure>
+             <figure class="navitem">
+                 <a href="../../main-content/contact.html"><img class="navimg" src="../../resources/Icons/contact-icon.png"></a>
+                 <figcaption>Contact</figcaption>
+             </figure>
+         </nav>
+         </header>
+
+
+    <main>
+        <div class="container">
+           <img src="./stopwatch.png" alt="Stopwatch Graphic">
+            <h2>Javascript Stopwatch</h2>
+
+           <p><span id="seconds">00</span> : <span id="tens">00</span></p> 
+           <button id="button-start">Start</button>
+           <button id="button-stop">Stop</button>
+           <button id="button-reset">Reset</button>
+           <script src="watch.js"></script>
+           <p class="reference">Image source: <a href="https://www.flaticon.com/search?word=stopwatch&color=color&order_by=2" target="_blank">Flaticon</a></p>
+        </div>
+           <section id="details">
+            <div id="text-container">
+           <h1>Basic Javascript Stopwatch</h1>
+           <h2>What?</h2>
+           <p>This stopwatch was created using HTML, CSS and JS.  It has three buttons that let you start, stop
+               and reset the timer.
+           </p>
+           <h2>Why?</h2>
+           <p>Timers can be a useful addition to a number of websites.  Perhaps you are running a quiz and want to 
+               record how long it takes users to complete it, or you want to track session time on a particular page.
+               This can be easily modified to be a countdown timer, or for the start / end to trigger
+               with different event cues to customize it to a specific application.
+           </p>
+           <h2>How?</h2>
+           <p>The layout was created in HTML with the "00:00" time specified as a start point and then the font, image and button appearance
+               all styled with CSS.  A Javascript on click event was setup for each button.  The start button
+               click executes a function every 10ms to update the display, with conditionals used to handle the various 
+               updates needed (either increment by one or add a second for example).  The stop button halts this cycle of running 
+               the funnction and the reset button halts the function and restores the orginal 00:00 value to the screen.
+           </p>
+           </div>
+           <a class="button" href="../../main-content/portfolio.html"><button type="button">Return to Portfolio</button></a>
+        </section>
+
+        </main>
+
+    
+     <!--Page Specific Content Ends Here-->
+     <footer>
+        <p>&copy; Stephanie De Smedt 2022</p>
+        <ul>
+            <li><a href="https://www.buymeacoffee.com/simplystef" target="_blank" rel="noreferrer noopener"><img class="footerimg" src="../../resources/Icons/coffee-cup.png"></a></li>
+            <li><img class="footerimg" src="./resources/Icons/instagram-white.png"></li>
+            <li><a href="https://twitter.com/Simply_Stefff" target="_blank" rel="noreferrer noopener"><img class="footerimg" src="../../resources/Icons/twitter-white.png"></a></li>
+            <li><a href="https://medium.com/@simply_stef" target="_blank" rel="noreferrer noopener"><img class="footerimg" src="../../resources/Icons/medium.png"></a></li>
+        </ul>
+    </footer>    
+
+</body>
+
+
+</html>
