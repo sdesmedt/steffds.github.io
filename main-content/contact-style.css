@@ -89,57 +89,30 @@ main {
     grid-row: 2 / span 1;
     grid-column: 1 / span 4;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-self: center;
     width: 100%;
+    margin-bottom: 2%;
 }
 .contact-title {
     grid-row: 1 / span 1;
-    grid-column: 1 / span 2;
     justify-self: center;
     font-family: 'Montserrat', sans-serif; 
     font-size: 0.9rem;
     margin-bottom: 0;
     padding: 0;
+    color: #4a4e69;
+    font-weight: 900;
 }
 .contact-subtitle{
     grid-row: 2 / span 1;
-    grid-column: 1 / span 2;
     justify-self: center;
     font-family: 'Montserrat', sans-serif; 
     font-size: 0.9rem;
     width: 75%;
     text-align: center;
+    font-style: italic;
 }
-
-.country {
-    grid-row: 3 / span 1;
-    grid-column: 1 / span 1;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 0.75rem;
-    justify-content: center;
-    margin-left: 40%;
-}
-.country img{
-    height: 30px;
-    width: 30px;
-}
-.country p {
-    margin-left: 5%;
-}
-.skills {
-    grid-row: 3 / span 1;
-    grid-column: 2 / span 1;
-    justify-self: center;
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 0.75rem;
-    align-self: start;
-    margin-right: 50%;
-}
-
 .maillogo {
     grid-row:3 / span 1;
     grid-column: 1 / span 2;
@@ -160,8 +133,8 @@ main {
     height: 40px;
     margin-bottom: 5%;
     font-family: 'Montserrat', sans-serif; 
-    font-size: 0.75rem;
-    color: #bfc0c0;
+    font-size: 0.9rem;
+    color: black
     padding-left: 10px;
     border-radius: 10px;
     border: 2px solid #4a4e69
@@ -171,12 +144,12 @@ main {
     width: 80%;
     margin-bottom: 5%; 
     font-family: 'Montserrat', sans-serif; 
-    font-size: 0.75rem;
-    color: #bfc0c0; 
+    font-size: 0.9rem;
+    color: black;
     padding-top: 10px;
     padding-left: 10px; 
     border-radius: 10px;
-    border: 2px solid #4a4e69
+    border: 2px solid #4a4e69;
 }
 .contact-form button {
     width: 50%;
@@ -187,9 +160,9 @@ main {
     color: white;
     padding: 10px;
 }
-.maillogo img {
-    height: 60%;
-    width: 60%;
+.maillogo object {
+    height: 80%;
+    width: 80%;
     justify-self: center;
     align-self: center;
     margin-left: 10%;
