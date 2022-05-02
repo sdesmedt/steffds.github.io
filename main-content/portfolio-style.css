@@ -88,8 +88,8 @@ main{
     grid-row: 2 / span 1;
     display: grid;
     gap: 5px;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(3, 2fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin: 0% 2% 0% 2%;
 }
 #footerspacing {
@@ -140,55 +140,63 @@ main{
 }
 
 #project-1 {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
 }
 #project-1 > .background {
     background-image: url(../resources/Portfolio/Projects/uber-eats-project.png);
 }
 #project-2 {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
 }
 #project-2 > .background {
     background-image: url("../resources/Portfolio/Skills/carousel-icon.jpg");
 }
 #project-3 {
-    grid-column: 5 / span 2;
     grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
     
 }
 #project-3 > .background {
     background-image: url("../skill-projects/stopwatch/stopwatch.png");
 }
 #project-4 {
-    grid-column: 7 / span 2;
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
 }
 #project-4 > .background {
     background: yellow;
 }
 #project-5 {
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 1;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
 }
 #project-5 > .background {
     background-image: url("../resources/Portfolio/Skills/tiles.jpg");
 }
 #project-6 {
-    grid-column: 5 / span 2;
-    grid-row: 2 / span 2;
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
 }
 #project-6 > .background {
     background: purple;
 }
 #project-7 {
-    grid-column: 7 / span 2;
-    grid-row: 3 / span 1;
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
 }
 #project-7 > .background {
     background: skyblue;
 }
+#project-8 {
+    grid-row: 2 / span 1;
+    grid-column: 4 / span 1;
+}
+#project-8 > .background {
+    background-image: url("../resources/Portfolio/Skills/weather.jpg");
+}
+
 
 
 
@@ -196,39 +204,43 @@ main{
     .gallery{
         grid-row: 2 / span 1;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(6, 2fr);
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4, 1fr);
         margin-left: 2%;
         margin-right: 2%;
         min-height: 1000px;
     }
     #project-1 {
-        grid-column: 1 / span 2;
-        grid-row: 1 / span 2;
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
     }
     #project-2 {
-        grid-column: 3 / span 2;
-        grid-row: 1 / span 3;
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
     }
     #project-3 {
-        grid-column: 1 / span 2;
-        grid-row: 4 / span 1;
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
     }
     #project-4 {
-        grid-column: 3 / span 2;
-        grid-row: 4 / span 2;
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
     }
     #project-5 {
-        grid-column: 1 / span 2;
-        grid-row: 3 / span 1;
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
     }
     #project-6 {
-        grid-column: 1 / span 2;
-        grid-row: 5 / span 2;
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
     }
     #project-7 {
-        grid-column: 3 / span 2;
-        grid-row: 6 / span 1;
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+    #project-8 {
+        grid-row: 4 / span 1;
+        grid-column: 2 / span 1;
     }
     .intro {
         font-size: 0.9rem;

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Tab Title Info-->
+  <title> Skills: Javascript Weather App</title>
+  <!--Meta Data-->
+  <meta charset="utf-8">
+  <meta name="description" content="Using a weather API to build a weather app">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Weather, Javascrip, API, Portfolio, Coding, Web Design, HTML, CSS">
+  <meta name="author" content="Stephanie De Smedt">
+  <!--Links to CSS stylesheets, fonts, icons etc-->
+  <link rel="stylesheet" href="./weather-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./weather.js" defer></script>  
+</head>
+<body>
+<header>
+    <h1>Portfolio Skills</h1>
+    <nav>
+     <figure class="navitem">
+         <a href="../../main-content/aboutme.html"><img class="navimg" src="../../resources/Icons/about-me-icon.png">
+         <figcaption>About Me</figcaption></a>
+     </figure>
+     <figure class="navitem">
+         <a href="../../main-content/portfolio.html"><img class="navimg" src="../../resources/Icons/portfolio-icon.png">
+         <figcaption>Portfolio</figcaption></a>
+     </figure>
+     <figure class="navitem">
+         <a href="../../main-content/blog.html"><img class="navimg" src="../../resources/Icons/blog-icon.png">
+         <figcaption>Blog</figcaption></a>
+     </figure>
+     <figure class="navitem">
+         <a href="../../main-content/contact.html"><img class="navimg" src="../../resources/Icons/contact-icon.png"></a>
+         <figcaption>Contact</figcaption>
+     </figure>
+ </nav>
+ </header>
+
+ <main>
+
+<section class="weather">
+    <h1>Find Out the Weather Where You Are:</h1>
+    <div id="loading-info">
+        <h2>...Loading...</h2>
+        <h3>(If content fails to load please ensure location access is granted)</h3>
+    </div>
+    <div id="weather-app">
+        <div class="location">
+            <h1 id="location-timezone">Location</h1>
+        </div>
+        <div class="weathericon">
+            <img id="icon" src="">
+        </div>
+        <div class="degree-section">
+            <h2 id="temp-degree">20</h2>
+            <span class="temp-unit">degC</span>
+        </div>
+        <div class="additional-weather">
+            <div class="add-info degree">
+                <h3>Min Temp</h3>
+                <h2 id="temp-min-degree">20</h2>
+                <span class="temp-unit">degC</span>
+            </div>
+            <div class="add-info degree-max">
+                <h3>Max Temp</h3>
+                <h2 id="temp-max-degree">20</h2>
+                <span class="temp-unit">degC</span>
+            </div>
+            <div class="add-info speed">
+                <h3>Wind Speed</h3>
+                <h2 id="wind-speed">5</h2>
+                <span class="wind-unit">m/s</span>
+            </div>
+            <div class="add-info direction">
+                <h3>Wind Direction</h3>
+                <img id="wind-arrow" src="./arrow-up.png">
+                <h3><span id="wind-direct">30</span> deg</h3>
+            </div>
+        </div>
+        <div class="descriptions">
+            <p id="temp-description">Cold</p>
+        </div>
+    </div>
+</section>
+<section id="details">
+    <div id="text-container">
+   <h1>Weather API Application</h1>
+   <h2>What?</h2>
+   <p>Using the location co-ordinates built into the browser this mini-project provides
+       information about the weather where the user is.  It provides a temperature in degree celcius, wind speed and wind direction
+       as well as an icon visually displaying current weather.
+   </p>
+   <h2>Why?</h2>
+   <p>This can be applied for any geographical information required and can be used to personalize the website 
+       for users.  Having a feature letting them know the weather can be useful for a lot of applications.  This example
+       can also be personalized more by adding expected rainfall, alternate units such as degF or even sunrise and sunset timings.
+   </p>
+   <h2>How?</h2>
+   <p>The layout was created in HTML but the main content set not to display until the Javascript query was loaded to ensure information was accurate.
+       Basic CSS styling and layouts were added to give a streamlined appearance.  Within Javascript an API query to <a href="https://openweathermap.org/current">Open Weather Map</a>
+       was performed combined with location data.  The required data was then extracted from the API response and formatted as needed.  An arrow was also
+       added to show wind direction that will rotate based on the current direction of the wind.
+   </p>
+   </div>
+   <a class="button" href="../../main-content/portfolio.html"><button type="button">Return to Portfolio</button></a>
+</section>
+</main>
+<footer>
+    <p>&copy; Stephanie De Smedt 2022</p>
+    <ul>
+        <li><a href="https://www.buymeacoffee.com/simplystef" target="_blank" rel="noreferrer noopener"><img class="footerimg" src="../../resources/Icons/coffee-cup.png"></a></li>
+        <li><img class="footerimg" src="./resources/Icons/instagram-white.png"></li>
+        <li><a href="https://twitter.com/Simply_Stefff" target="_blank" rel="noreferrer noopener"><img class="footerimg" src="../../resources/Icons/twitter-white.png"></a></li>
+        <li><a href="https://medium.com/@simply_stef" target="_blank" rel="noreferrer noopener"><img class="footerimg" src="../../resources/Icons/medium.png"></a></li>
+    </ul>
+</footer>   
+</body>
+</html>
