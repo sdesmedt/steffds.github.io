@@ -9,19 +9,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Portfolio, Web Design, HTML, CSS, Javascript">
     <meta name="author" content="Stephanie De Smedt">
+    <link rel="stylesheet" href="./color-flip.css">
+    <script src="color-flip.js" defer></script>
 </head>
-<header>
 
-</header>
 <body>
-<script src="colorpick.js" defer></script>
-<div class="color-zone">
-</div>
-
-<button type="button" data-button>New color</button>
-
-</body>
+    <header>
+        <h1>Portfolio Skills</h1>
+        <nav>
+         <figure class="navitem">
+             <a href="../../main-content/aboutme.html"><img class="navimg" src="../../resources/Icons/about-me-icon.png">
+             <figcaption>About Me</figcaption></a>
+         </figure>
+         <figure class="navitem">
+             <a href="../../main-content/portfolio.html"><img class="navimg" src="../../resources/Icons/portfolio-icon.png">
+             <figcaption>Portfolio</figcaption></a>
+         </figure>
+         <figure class="navitem">
+             <a href="../../main-content/blog.html"><img class="navimg" src="../../resources/Icons/blog-icon.png">
+             <figcaption>Blog</figcaption></a>
+         </figure>
+         <figure class="navitem">
+             <a href="../../main-content/contact.html"><img class="navimg" src="../../resources/Icons/contact-icon.png"></a>
+             <figcaption>Contact</figcaption>
+         </figure>
+     </nav>
+     </header>
+<main>
+<section id="color-selector">
+    <div id="color-heading">
+        <h1>Random Color Palette Generator</h1>
+        <p>Click on the button below to shuffle the colors,
+        when you find a color that you like lock it in - don't worry you can always unlock it later!</p>
+    </div>
+    <div id="color-palettes">
+        <div id="color-1"></div>
+        <p id="color-text-1">Color is: #<span id="text-1">003049</span></p>
+        <button class="colorbutton" id="lock-1">Lock In</button>
+        <div id="color-2"></div>
+        <p id="color-text-2">Color is: #<span id="text-2">d62828</span></p>
+        <button class="colorbutton" id="lock-2">Lock In</button>
+        <div id="color-3"></div>
+        <p id="color-text-3">Color is: #<span id="text-3">f77f00</span></p>
+        <button class="colorbutton" id="lock-3">Lock In</button>
+        <div id="color-4"></div>
+        <p id="color-text-4">Color is: #<span id="text-4">fcbf49</span></p>
+        <button class="colorbutton" id="lock-4">Lock In</button>
+        <div id="color-5"></div>
+        <p id="color-text-5">Color is: #<span id="text-5">eae2b7</span></p>
+        <button class="colorbutton" id="lock-5">Lock In</button>
+    </div>
+    <div id="buttons">
+    <button id="random-color">Random Colors</button>
+    </div>
+</section>
+<section id="details">
+    <div id="text-container">
+   <h1>Color Palette Generator</h1>
+   <h2>What?</h2>
+   <p>This web applications generates a series of random colors.  The user can lock in colors that they like
+     with a view to generating a color palette for them to use.  The HEX code for each color is displayed so that 
+     it can be easily copied.
+   </p>
+   <h2>Why?</h2>
+   <p>Choosing colors in webdesign can be challenging, this tool will allow people to view a variety of different
+       colors side-by-side to select ones they like.  With modification it can also be used to color characters in 
+       a game or applied to full website or email themes.
+   </p>
+   <h2>How?</h2>
+   <p>The project was completed using HTML to setup and define the elements.  CSS was then used to set the default colors the 
+       user sees on startup.  The Javascript file has a function that using the Math.random() method generates a random HEX code 
+       which is then applied by means of another function to update the text and background color.  Finally the logic is setup so if 
+       the button is in "locked" state no more HEX codes will be generated for it.
+   </p>
+   </div>
+   <a class="button" href="../../main-content/portfolio.html"><button type="button">Return to Portfolio</button></a>
+</section>
+</main>
 <footer>
-
+    <p>&copy; Stephanie De Smedt 2022</p>
+    <ul>
+        <li><a href="https://www.buymeacoffee.com/simplystef" target="_blank" rel="noreferrer noopener"><img class="footerimg" src="../../resources/Icons/coffee-cup.png"></a></li>
+        <li><img class="footerimg" src="./resources/Icons/instagram-white.png"></li>
+        <li><a href="https://twitter.com/Simply_Stefff" target="_blank" rel="noreferrer noopener"><img class="footerimg" src="../../resources/Icons/twitter-white.png"></a></li>
+        <li><a href="https://medium.com/@simply_stef" target="_blank" rel="noreferrer noopener"><img class="footerimg" src="../../resources/Icons/medium.png"></a></li>
+    </ul>
 </footer>
+</body>
 </html>
